@@ -1,0 +1,21 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Additional styles */
+@import 'additional-styles/utility-patterns.css';
+
+@import 'tailwindcss/utilities';
+
+/* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
+@layer utilities {
+  .rtl {
+    direction: rtl;
+  }
+}
+
+.font-russone {
+  font-family: 'Russo One', sans-serif !important;
+}
