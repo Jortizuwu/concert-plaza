@@ -1,3 +1,4 @@
+import { russo } from '@/app/layout'
 import React from 'react'
 
 export default function Form() {
@@ -8,7 +9,9 @@ export default function Form() {
           Gracias por preferirnos, necesitamos los siguientes datos para
           realizar la cotización de tu artista
         </p>
-        <h2 className='text-3xl md:text-[60px] mb-4 font-russo text-black'>
+        <h2
+          className={`text-3xl md:text-[60px] mb-4 text-black ${russo.className}`}
+        >
           MS Represent
         </h2>
       </div>
@@ -16,7 +19,7 @@ export default function Form() {
         action=''
         className='flex flex-col items-center justify-between space-y-4 w-11/12'
       >
-        <div className='flex flex-col space-y-3 md:space-y-0 md:flex-col md:items-center justify-between w-full'>
+        <div className='flex flex-col space-y-3 md:space-y-0 md:flex-row md:items-center justify-between w-full'>
           <div>
             <label
               htmlFor='countries'
@@ -29,10 +32,6 @@ export default function Form() {
               className='bg-white border border-gray-100 focus:outline focus:outline-primary text-gray-400 text-sm rounded-lg block w-full p-2.5'
             >
               <option selected>Publico</option>
-              <option value='US'>United States</option>
-              <option value='CA'>Canada</option>
-              <option value='FR'>France</option>
-              <option value='DE'>Germany</option>
             </select>
           </div>
           <div>
@@ -47,10 +46,6 @@ export default function Form() {
               className='bg-white border border-gray-100 focus:outline focus:outline-primary text-gray-400 text-sm rounded-lg block w-full p-2.5'
             >
               <option selected>Si</option>
-              <option value='US'>United States</option>
-              <option value='CA'>Canada</option>
-              <option value='FR'>France</option>
-              <option value='DE'>Germany</option>
             </select>
           </div>
           <div>
@@ -65,10 +60,6 @@ export default function Form() {
               className='bg-white border border-gray-100 focus:outline focus:outline-primary text-gray-400 text-sm rounded-lg block w-full p-2.5'
             >
               <option selected>20.001 - 50.000</option>
-              <option value='US'>United States</option>
-              <option value='CA'>Canada</option>
-              <option value='FR'>France</option>
-              <option value='DE'>Germany</option>
             </select>
           </div>
         </div>

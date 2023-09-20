@@ -135,7 +135,7 @@ export default function CalendarComponent() {
                       isEqual(day, selectedDay) && 'text-blue-500',
                       !isEqual(day, selectedDay) &&
                         isToday(day) &&
-                        'text-red-500',
+                        'text-gray-400',
                       !isEqual(day, selectedDay) &&
                         !isToday(day) &&
                         isSameMonth(day, firstDayCurrentMonth) &&
@@ -144,7 +144,7 @@ export default function CalendarComponent() {
                         !isToday(day) &&
                         !isSameMonth(day, firstDayCurrentMonth) &&
                         'text-blue-500',
-                      isEqual(day, selectedDay) && isToday(day) && 'bg-red-500',
+                      isEqual(day, selectedDay) && isToday(day) && 'bg-gray-500',
                       isEqual(day, selectedDay) &&
                         !isToday(day) &&
                         'bg-blue-200 text-blue-500',

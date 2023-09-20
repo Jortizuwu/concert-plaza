@@ -5,6 +5,7 @@ import Gift from '../public/gift.svg'
 import Speakerphone from '../public/speakerphone.svg'
 
 import Card from './utils/card'
+import { russo } from '@/app/layout'
 
 const data = [
   {
@@ -30,7 +31,7 @@ export default function FeaturesBlocks() {
       <div className='relative max-w-6xl mx-auto px-4 sm:px-6'>
         <div className='pb-12 md:pb-20'>
           <div className='max-w-3xl mx-auto text-center pb-2 md:pb-4'>
-            <h2 className='text-3xl md:text-7xl mb-4 font-russo'>
+            <h2 className={`text-3xl md:text-7xl mb-4 ${russo.className}`}>
               Promociona al artista
             </h2>
             <p className='text-sm md:text-lg text-white'>

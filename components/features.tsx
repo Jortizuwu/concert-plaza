@@ -1,4 +1,4 @@
-'use client'
+import { russo } from '@/app/layout'
 
 export default function Features() {
   return (
@@ -14,10 +14,10 @@ export default function Features() {
           </div>
 
           <div className='max-w-xl md:max-w-none md:w-full mx-auto md:col-span-8 lg:col-span-7 mb-8 md:mb-0 md:order-1 pt-5 px-5 md:pt-20 md:px-20'>
-            <h3 className='h3 mb-3 text-3xl md:text-5xl font-russo'>
+            <h3 className={`h3 mb-3 text-3xl md:text-5xl ${russo.className}`}>
               MS Represent es un artista cartagenero,
             </h3>
-            <p className='text-sm md:text-lg text-black'>
+            <p className='text-sm md:text-lg font-inter text-black'>
               criado en 'Nueva Granada', un popular barrio de "La Heroica" que,
               a diario ve nacer niños y jóvenes con más sueños que
               oportunidades. Su crecimiento físico fue directamente proporcional
@@ -27,7 +27,7 @@ export default function Features() {
               convertida en cultura, en forma de pandillas y otros tipos de
               atropellos.
             </p>
-            <p className='text-sm md:text-lg text-black mt-4'>
+            <p className='text-sm md:text-lg text-black mt-4 font-inter'>
               La música fue su salvación; gracias a esta, de la que se enamoró
               en las calles y plazas caribes encontró su objetivo de vida,
               primero a través del rap, y luego con la música urbana, con la se
@@ -35,7 +35,7 @@ export default function Features() {
               con artistas de talla mundial como Arcángel, Mozart la para, Ñejo,
               Nicky Jam, entre otros.
             </p>
-            <p className='text-sm md:text-lg text-black mt-4'>
+            <p className='text-sm md:text-lg text-black mt-4 font-inter'>
               En el 2018 lanzó su álbum 'History', donde fusionó varios ritmos
               caribeños con el género urbano. Actualmente está radicado en la
               ciudad de Medellín, reanudando su carrera artística.

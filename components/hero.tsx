@@ -1,3 +1,5 @@
+import { russo } from '@/app/layout'
+
 export default function Hero() {
   return (
     <section className='relative h-[88vh] md:h-[90vh] bg-black mt-16 md:mt-20'>
@@ -6,9 +8,11 @@ export default function Hero() {
         <div className='absolute -left-10 sm:left-0 bottom-0 mx-auto px-5 sm:px-6 pt-32 pb-10 md:pt-40 md:pb-16'>
           <div className='relative max-w-6xl mx-auto px-4 sm:px-6'>
             <div className='max-w-1xl mx-auto px-12 sm:px-12'>
-              <h1 className='text-white font-russo text-4xl md:text-[60px] xl:text-8xl font-extrabold leading-tighter tracking-tighter mb-4'>
+              <h1
+                className={`text-white ${russo.className} text-4xl md:text-[60px] xl:text-8xl  leading-tighter tracking-tighter mb-4`}
+              >
                 MS
-                <span className='block font-russo'>REPRESENT</span>
+                <span className={`block ${russo.className}`}>REPRESENT</span>
               </h1>
 
               <div>

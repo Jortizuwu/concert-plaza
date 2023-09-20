@@ -3,12 +3,15 @@ import Image from 'next/image'
 import video1 from '../public/images/video1.png'
 import video2 from '../public/images/video2.png'
 import video3 from '../public/images/video3.png'
+import { russo } from '@/app/layout'
 
 export default function Testimonials() {
   return (
     <section className='relative py-6 md:py-16 pb-10 bg-dark'>
       <div className='max-w-6xl mx-auto px-4 sm:px-6'>
-        <h2 className='h2 mb-4 text-4xl md:text-7xl text-white font-russo'>
+        <h2
+          className={`mb-4 text-4xl md:text-7xl text-white ${russo.className}`}
+        >
           Videos
         </h2>
       </div>

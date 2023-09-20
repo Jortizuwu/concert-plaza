@@ -29,7 +29,7 @@ module.exports = {
         '1/1': '100%',
       },
       fontFamily: {
-        russo: ['"Russo One"','sans-serif'],
+        russo: ['var(--font-russo)','sans-serif'],
         inter: ['var(--font-inter)', 'sans-serif'],
       },
       fontSize: {

@@ -1,3 +1,4 @@
+import { russo } from '@/app/layout'
 import CalendarComponent from './utils/calendar'
 import Carousel from './utils/carousel'
 
@@ -7,7 +8,7 @@ export default function Calendar() {
       <div className='relative max-w-6xl mx-auto px-4 sm:px-6'>
         <div className='py-12 md:py-20'>
           <div className='max-w-3xl mx-auto text-center pb-12 md:pb-20'>
-            <h2 className='text-3xl md:text-7xl mb-4 font-russo'>
+            <h2 className={`text-3xl md:text-7xl mb-4 ${russo.className}`}>
               Planifica tu evento
             </h2>
             <p className='text-sm md:text-lg text-white'>
